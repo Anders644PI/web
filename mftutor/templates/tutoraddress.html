@@ -1,4 +1,5 @@
 {% load thumbnail %}
+<script type="text/javascript" src="{% static "otherTutorProfileCard.js" %}"></script>
 <div class="tutoraddress tutor{{ tutor.studentnumber }}">
  <div class="pic">
   {% if tutor.picture %}
@@ -11,7 +12,7 @@
  </div> <!-- /pic -->
  <div class="detailscontainer">
   <div class="detailsmagic"></div><div class="details">
-   <div class="name">
+   <div class="name" onclick=otherTutorProfileCard()>
     {{ tutor.full_name }}
    </div> <!-- /name -->
    <ul>
